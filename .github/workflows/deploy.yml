@@ -29,8 +29,7 @@ jobs:
       
         cp -r src/ space_repo/src/ 
         cp -r models/ space_repo/models/ 
-        cp requirements.txt 
-        space_repo/requirements.txt 
+        cp requirements.txt space_repo/requirements.txt 
         cp Dockerfile space_repo/Dockerfile 
         find space_repo -name "mlflow.db" -type f -delete 
         find space_repo -name "__pycache__" -type d  -exec rm -rf {} + 
