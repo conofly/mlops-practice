@@ -13,7 +13,7 @@ jobs:
     steps:
     - name: Check Health Endpoint
       run: | 
-        curl --fail https://conofly/iris-api-ruenkov.hf.space/health
+        curl --fail https://conofly-iris-api-ruenkov.hf.space/health
     - name: Create Issue on Failure
       if: failure()
       env:
